@@ -1,0 +1,41 @@
+<section>
+    <div class="background">
+        <h1>Our <span style="color: orange">Categories</span></h1>
+        <input type="text" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="Search...."  >
+    <div class="container-category">
+        <div class="category-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/2702/2702300.png" alt="">
+            <h2>Handyman</h2>
+            <a (click)="filter('HandyMan')" >Categorize</a>
+        </div>
+        <div class="category-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3713/3713314.png" alt="">
+            <h2>Electrician</h2>
+            <a (click)="filter('Electrician')" >Categorize</a>
+        </div>
+        <div class="category-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/1989/1989672.png" alt="">
+            <h2>Plumber</h2>
+            <a (click)="filter('Plumbing')">Categorize</a>
+        </div>
+        <div class="category-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/1995/1995595.png" alt="">
+            <h2>Carpenter</h2>
+            <a (click)="filter('Carpentar')" >Categorize</a>
+        </div>
+    </div>
+    </div>
+</section>
+    <div class="container-services">
+        <div class="card-main"  *ngFor = "let item of filterCategory | filter:searchKey:'name'">
+            <div class="card">
+                <img [src] = "item.image" alt=""> 
+                  <div class="card__details">
+                    <span class="tag">{{item.category}}</span>
+                    <div class="name">{{item.name}}</div>
+                  <p>{{item.description}}</p>
+                  <button>Book Now At ₹ {{item.charge}}</button>
+                </div>
+              </div>
+        </div>
+    </div>

@@ -1,0 +1,115 @@
+
+section{
+    background-image: url("https://html.dreamitsolution.net/dreamit/handyman/assets/images/slider/slider1.jpg");
+    padding:  7rem 10rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+h4{
+    margin-bottom: 1rem;
+    word-spacing: 10px;
+    font-size: 1.2rem;
+}
+h1{
+    font-size: 2.8rem;
+    width: 65%;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+section p{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    
+}
+section i{
+    background-color: var(--orange);
+    border-radius: 50%;
+    padding: 1rem;
+    margin-right: 2rem;
+}
+section h2{
+    margin-bottom: 2rem;
+}
+button{
+    background-color: var(--orange);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 1rem 2.8rem;
+    border-radius: 4px;
+    margin-right: 1rem;
+}
+button#buttonfirst{
+    background-color: white;
+    color: var(--orange);
+}
+button:hover{
+    transform: scale(1.1);
+    border: none;
+    cursor: pointer;
+    transition: transform 330ms ease-in-out;
+}
+main{
+    background: url("https://html.dreamitsolution.net/dreamit/handyman/assets/images/resource/service.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+    padding: 90px 0 165px;
+    font-family: 'Montserrat', sans-serif;
+}
+main::before{
+    position: absolute;
+    content: "";
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(180deg, #0B2653 0%, #FC9615 100%);
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+}
+main h4{
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    font-style: italic;
+}
+main h1{
+    color: white;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    margin: 5rem;
+}
+.services{
+    background-color: white;
+    padding:  2rem 2.8rem;
+    border-radius: 8px;
+    box-shadow: #00000005 0 1px 3px, #1b1f2326 0 0 0 1px;
+}
+.services h5{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.services img{
+    width: 28%;
+    margin-right: 1rem;
+}
+.services .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.services .content p{
+    font-weight: 500;
+}

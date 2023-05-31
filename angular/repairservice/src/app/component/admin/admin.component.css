@@ -1,0 +1,66 @@
+h1{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.content-table {
+    border-collapse: collapse;
+    margin: 25px;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+}
+button{
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    background-color: var(--orange);
+    border: none;
+    color: white;
+    margin-left: 2rem;
+    border-radius: 40px;
+}
+.content-table thead tr {
+    background-color: var(--orange);
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+    font-size: 1rem;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+button{
+    cursor: pointer;
+}
+input{
+    padding: 1rem 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    border-radius: 10px;
+}
+a{
+    cursor: pointer;
+}
